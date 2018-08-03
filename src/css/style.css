@@ -1,0 +1,51 @@
+#custom-style {
+  background-color: rgb(0, 121, 191);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fafafa;
+  height: 100vh;
+  width: auto;
+}
+
+.bg-custom {
+  background-color: rgba(0, 0, 0, .15);
+  z-index: -1;
+}
+
+.btn-custom {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  color: #fafafa;
+  opacity: 1;
+}
+
+.btn-tabs {
+  display: block;
+  float: left;
+  width: 99.31px;
+  height: 32px;
+  color: #fafafa;
+  opacity: 1;
+}
+
+#header-text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fafafa;
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 1;
+  position: relative;
+  float: left;
+}
+
+.header-search-btn {
+  width: 180px;
+  height: 32px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3)
+}
+
+.lupa {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-left-color: rgba(255, 255, 255, 0.3);
+}
