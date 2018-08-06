@@ -22,31 +22,32 @@
     <header>
       <!-- Button Tabs -->
       <div class="d-flex flex-row py-1 bg-custom">
-        <div class="col-md px-1 ">
+        <div class="col-auto px-1 ">
           <button class="btn btn-custom btn-tabs pl-2">
             <span id="header-text">
               <i class="fab fa-trello mr-2"></i>Tableros</span>
           </button>
         </div>
         <!-- Search Box -->
-        <div class="col-md px-0">
+        <div class="col-md d-flex px-0">
           <div class="input-group search-box">
-            <input type="text" class="form-control search-btn">
-            <span class="input-group-text search-btn" id="basic-addon2">
+            <input type="text" class="form-control search-btn1">
+            <span class="input-group-text search-btn2" id="basic-addon2">
               <i class="fas fa-search" style="color: white"></i>
             </span>
           </div>
         </div>
         <div class="col-md d-flex"></div>
         <!-- Logo -->
-        <div class="col-md d-flex">
+        <div class="col-md d-flex ml-3">
           <a class="mx-auto text-center" id="header-logo" href="https://trello.com">
             <img src="img/header-logo.png" class="mx-auto text-center" width="80" height="30" alt="trello-logo-blue">
           </a>
         </div>
         <div class="col-md d-flex"></div>
         <div class="col-md d-flex"></div>
-        <div class="col-md d-flex p-0">
+        <!-- User Function Buttons -->
+        <div class="col-auto d-flex p-0">
           <div class="text-center">
             <button class="btn btn-custom small-header-btn p-0">
               <i class="fas fa-plus"></i>
@@ -69,7 +70,7 @@
     <nav>
       <div class="flex-row">
         <a class="btn" href="#">
-          <span class="mainBoard">Tablero - Reto de Código</span>
+          <span class="tabs-btn">Tablero - Reto de Código</span>
         </a>
         <a class="btn">
           <i class="far fa-star"></i>
@@ -94,8 +95,25 @@
     </nav>
 
     <!-- Main Board -->
-    <main>
-      
+    <main id="mainBoard">
+      <div class="d-flex flex-row pt-2">
+        <div class="col-md d-flex pr-0">
+          <div class="board-wrapper bg-custom addListStyle p-2">
+            <span>Añadir una lista...</span>
+          </div>
+        </div>
+        <div class="col-md d-flex pr-0">
+          <div class="card">
+            <div class="card-body custom-card p-1">
+              <input type="text" class="input-group input-mainBoard" placeholder="Introduzca el título de la lista...">
+              <a href="#" class="btn btn-mainBoard text-center mt-1">Añadir lista</a>
+              <a class="btn small-main-btn"><i class="fas fa-times"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md d-flex pr-0"></div>
+        <div class="col-md d-flex pr-0"></div>
+      </div>
     </main>
 
   </div>
