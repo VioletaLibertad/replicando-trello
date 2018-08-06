@@ -7,6 +7,15 @@
   width: auto;
 }
 
+/* Funcionalidad Aparecer y Desaparecer */
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 /* Header Styles */
 .bg-custom {
   background-color: rgba(0, 0, 0, .15);
@@ -119,4 +128,20 @@
 .small-main-btn {
   height: 32px;
   width: 32px;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.custom-card-footer {
+  background-color: #e2e4e6;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-task {
+  background-color: #fafafa;
+  border-radius: 3px;
 }

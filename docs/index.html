@@ -88,7 +88,9 @@
           <i class="fas fa-user-plus"></i>
         </button>
         <a class="btn float-right">
-          <span>...</span>
+          <span>
+            <i class="fas fa-ellipsis-h"></i>
+          </span>
           <span>Mostrar Menú</span>
         </a>
       </div>
@@ -97,22 +99,54 @@
     <!-- Main Board -->
     <main id="mainBoard">
       <div class="d-flex flex-row pt-2">
-        <div class="col-md d-flex pr-0">
+        <div class="col-auto d-flex pl-2 pr-0">
+          <!-- Botón Añadir lista -->
           <div class="board-wrapper bg-custom addListStyle p-2">
             <span>Añadir una lista...</span>
           </div>
+
         </div>
-        <div class="col-md d-flex pr-0">
+        <div class="col-auto d-flex pl-2 pr-0">
+          <!-- Tarjeta Añadir título -->
           <div class="card">
             <div class="card-body custom-card p-1">
               <input type="text" class="input-group input-mainBoard" placeholder="Introduzca el título de la lista...">
               <a href="#" class="btn btn-mainBoard text-center mt-1">Añadir lista</a>
-              <a class="btn small-main-btn"><i class="fas fa-times"></i></a>
+              <a class="btn small-main-btn">
+                <i class="fas fa-times text-muted"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-auto d-flex pl-2 pr-0">
+          <!-- Tarjeta ya con título -->
+          <div class="card hide">
+            <div class="card-body custom-card p-1">
+              <h5 class="card-title m-0 p-2">Título de tarjeta</h5>
+              <div class="btn btn-custom custom-card-footer">
+                <span class="text-muted"> + Añada una tarjeta</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md d-flex pr-0"></div>
-        <div class="col-md d-flex pr-0"></div>
+        <div class="col-auto d-flex pl-2 pr-0">
+          <!-- Tarjeta con título y tareas -->
+          <div class="card hide">
+            <div class="card-body custom-card p-1">
+              <h5 class="card-title m-0 p-2">Título de tarjeta</h5>
+              <div class="card-task m-1 p-1">
+                Lorem Ipsum
+              </div>
+              <div class="card-task m-1 p-1">
+                Lorem Ipsum
+              </div>
+              <div class="btn btn-custom custom-card-footer">
+                <span class="text-muted"> + Añada una tarjeta</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
