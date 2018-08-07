@@ -94,7 +94,7 @@
 /* Main Board */
 #mainBoard {
   color: #0d0d0d;
-  display: inline;
+  display: inline-block;
 }
 
 .input-mainBoard {
@@ -118,6 +118,7 @@
   border-radius: 3px;
   opacity: 0.7;
   color: #fafafa;
+  cursor: pointer;
 }
 
 .custom-card {
