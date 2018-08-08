@@ -33,9 +33,9 @@ window.controller.obtainListTitle = () => {
   return listTitle;
 };
 
-window.controller.createNewList = (listTitle) => {
-  console.log('prueba en controller ' + listTitle);
-  return window.view.showNewList(listTitle);
+window.controller.createNewList = (listTitle, newListContainerId) => {
+  console.log('prueba en controller ' + listTitle + newListContainerId);
+  return window.view.showNewList(listTitle, newListContainerId);
 };
 
 window.controller.obtainNewTask = () => {
@@ -43,7 +43,7 @@ window.controller.obtainNewTask = () => {
   return newTask;
 };
 
-window.controller.createNewTask = (newTask) => {
-  console.log('prueba en controller 2 ' + newTask);
-  return window.view.showNewTask(newTask);
+window.controller.createNewTask = (newTask, newTaskContainerId) => {
+  console.log('prueba en controller 2 ' + newTask + newTaskContainerId);
+  return window.view.showNewTask(newTask, newTaskContainerId);
 };
