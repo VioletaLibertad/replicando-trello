@@ -97,6 +97,12 @@
   display: inline-block;
 }
 
+#listContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: overlay;
+}
+
 .input-mainBoard {
   height: 35px;
   border-radius: 3px;
