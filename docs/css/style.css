@@ -56,6 +56,15 @@
   border-radius: 3px 0px 0px 3px; 
 }
 
+@media (max-width: 750px) {
+  .search-btn1 {
+    display: none;
+  }
+  .info-btn {
+    display: none;
+  }
+}
+
 .search-btn2 {
   height: 32px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -94,7 +103,13 @@
 /* Main Board */
 #mainBoard {
   color: #0d0d0d;
-  display: inline;
+  display: inline-block;
+}
+
+#listContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: overlay;
 }
 
 .input-mainBoard {
@@ -118,6 +133,7 @@
   border-radius: 3px;
   opacity: 0.7;
   color: #fafafa;
+  cursor: pointer;
 }
 
 .custom-card {

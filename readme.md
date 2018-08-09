@@ -1,4 +1,4 @@
-##Replicando Trello
+# Replicando Trello
 
 Ejercicio para practicar CSS y DOM.
 
