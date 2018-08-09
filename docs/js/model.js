@@ -20,10 +20,10 @@ window.model.getListTitle = () => {
   return window.controller.createNewList(listTitle, originalTaskContainer, newListContainerId, taskFooterId, newTaskFormId, userNewTaskId);
 };
 
-window.model.getNewTask = () => {
+window.model.getNewTask = (userNewTaskId, originalTaskContainer) => {
   counterList++;
-  let newTask = document.getElementById(`${userNewTaskId}`).value;
+  let newTask = document.getElementById(userNewTaskId).value;
   newTaskContainerId = 'newTaskContainer' + counterList;
   console.log(newTask, newTaskContainerId);
-  return window.controller.createNewTask(newTask, newTaskContainerId);
+  return window.controller.createNewTask(newTask, userNewTaskId, newTaskContainerId, originalTaskContainer);
 };

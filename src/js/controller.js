@@ -14,18 +14,18 @@ removeCreateListCard.addEventListener('click', () => {
   addNewListBtn.classList.add('show');
 });
 
-window.controller.showTaskForm = () => {
-  document.getElementById(`${newTaskFormId}`).classList.remove('hide');
-  document.getElementById(`${newTaskFormId}`).classList.add('show');
-  document.getElementById(`${taskFooterId}`).classList.add('hide');
-  document.getElementById(`${taskFooterId}`).classList.remove('show');
+window.controller.showTaskForm = (taskFooterId,newTaskFormId) => {
+  document.getElementById(newTaskFormId).classList.remove('hide');
+  document.getElementById(newTaskFormId).classList.add('show');
+  document.getElementById(taskFooterId).classList.add('hide');
+  document.getElementById(taskFooterId).classList.remove('show');
 };
 
-window.controller.showTaskFooter = () => {
-  document.getElementById(`${newTaskFormId}`).classList.remove('show');
-  document.getElementById(`${newTaskFormId}`).classList.add('hide');
-  document.getElementById(`${taskFooterId}`).classList.add('show');
-  document.getElementById(`${taskFooterId}`).classList.remove('hide');
+window.controller.showTaskFooter = (taskFooterId,newTaskFormId) => {
+  document.getElementById(newTaskFormId).classList.remove('show');
+  document.getElementById(newTaskFormId).classList.add('hide');
+  document.getElementById(taskFooterId).classList.add('show');
+  document.getElementById(taskFooterId).classList.remove('hide');
 };
 
 window.controller.obtainListTitle = () => {
@@ -38,12 +38,12 @@ window.controller.createNewList = (listTitle, originalTaskContainer, newListCont
   return window.view.showNewList(listTitle, originalTaskContainer, newListContainerId, taskFooterId, newTaskFormId, userNewTaskId);
 };
 
-window.controller.obtainNewTask = () => {
-  let newTask = window.model.getNewTask();
+window.controller.obtainNewTask = (userNewTaskId, originalTaskContainer) => {
+  let newTask = window.model.getNewTask(userNewTaskId, originalTaskContainer);
   return newTask;
 };
 
-window.controller.createNewTask = (newTask, newTaskContainerId) => {
+window.controller.createNewTask = (newTask, userNewTaskId, newTaskContainerId, originalTaskContainer) => {
   console.log('prueba en controller 2 ' + newTask + newTaskContainerId);
-  return window.view.showNewTask(newTask, newTaskContainerId);
+  return window.view.showNewTask(newTask, userNewTaskId, newTaskContainerId, originalTaskContainer);
 };

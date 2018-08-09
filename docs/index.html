@@ -22,10 +22,10 @@
     <header>
       <!-- Button Tabs -->
       <div class="d-flex flex-row py-1 bg-custom">
-        <div class="col-auto px-1 ">
-          <button class="btn btn-custom btn-tabs pl-2">
-            <span id="header-text">
-              <i class="fab fa-trello mr-2"></i>Tableros</span>
+        <div class="col-auto px-1">
+          <button class="btn btn-custom btn-tabs tabs-icon p-0">
+            <span class="header-text"><i class="fab fa-trello"></i></span>
+            <span class="header-text tabs-text">Tableros</span>
           </button>
         </div>
         <!-- Search Box -->
@@ -76,9 +76,9 @@
           <i class="far fa-star"></i>
         </a>
         <span class="navbar-divider"></span>
-        <a class="btn">Personal</a>
+        <a class="btn btn-navbar">Personal</a>
         <span class="navbar-divider"></span>
-        <a class="btn">
+        <a class="btn btn-navbar">
           <i class="fas fa-lock pr-2"></i>Privado</a>
         <span class="navbar-divider"></span>
         <button class="btn btn-custom small-header-btn ml-2 p-0 user-btn">
@@ -107,9 +107,9 @@
           </div>
           <!-- Tarjeta Añadir título -->
           <div class="card hide" id="createListCard">
-            <div class="card-body custom-card p-1">
-              <input type="text" class="input-group input-mainBoard" placeholder="Introduzca el título de la lista..." id="newListTitle">
-              <a href="#" class="btn btn-mainBoard text-center mt-1" id="createListBtn" onclick="window.controller.obtainListTitle()">Añadir lista</a>
+            <div class="card-body custom-card p-2">
+              <input type="text" class="input-group input-mainBoard p-1" placeholder="Introduzca el título de la lista..." id="newListTitle">
+              <a href="#" class="btn btn-mainBoard my-1" id="createListBtn" onclick="window.controller.obtainListTitle()">Añadir lista</a>
               <a class="btn small-main-btn" id="removeCreateListCard">
                 <i class="fas fa-times text-muted"></i>
               </a>
