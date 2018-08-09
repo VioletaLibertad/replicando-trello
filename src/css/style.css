@@ -56,6 +56,15 @@
   border-radius: 3px 0px 0px 3px; 
 }
 
+@media (max-width: 750px) {
+  .search-btn1 {
+    display: none;
+  }
+  .info-btn {
+    display: none;
+  }
+}
+
 .search-btn2 {
   height: 32px;
   background-color: rgba(255, 255, 255, 0.3);

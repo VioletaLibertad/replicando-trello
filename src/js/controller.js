@@ -15,17 +15,17 @@ removeCreateListCard.addEventListener('click', () => {
 });
 
 window.controller.showTaskForm = () => {
-  document.getElementById('newTaskForm').classList.remove('hide');
-  document.getElementById('newTaskForm').classList.add('show');
-  document.getElementById('taskFooter').classList.add('hide');
-  document.getElementById('taskFooter').classList.remove('show');
+  document.getElementById(`${newTaskFormId}`).classList.remove('hide');
+  document.getElementById(`${newTaskFormId}`).classList.add('show');
+  document.getElementById(`${taskFooterId}`).classList.add('hide');
+  document.getElementById(`${taskFooterId}`).classList.remove('show');
 };
 
 window.controller.showTaskFooter = () => {
-  document.getElementById('newTaskForm').classList.remove('show');
-  document.getElementById('newTaskForm').classList.add('hide');
-  document.getElementById('taskFooter').classList.add('show');
-  document.getElementById('taskFooter').classList.remove('hide');
+  document.getElementById(`${newTaskFormId}`).classList.remove('show');
+  document.getElementById(`${newTaskFormId}`).classList.add('hide');
+  document.getElementById(`${taskFooterId}`).classList.add('show');
+  document.getElementById(`${taskFooterId}`).classList.remove('hide');
 };
 
 window.controller.obtainListTitle = () => {
@@ -33,9 +33,9 @@ window.controller.obtainListTitle = () => {
   return listTitle;
 };
 
-window.controller.createNewList = (listTitle, newListContainerId) => {
-  console.log('prueba en controller ' + listTitle + newListContainerId);
-  return window.view.showNewList(listTitle, newListContainerId);
+window.controller.createNewList = (listTitle, originalTaskContainer, newListContainerId, taskFooterId, newTaskFormId, userNewTaskId) => {
+  console.log('prueba en controller ' + listTitle + newListContainerId + taskFooterId + newTaskFormId);
+  return window.view.showNewList(listTitle, originalTaskContainer, newListContainerId, taskFooterId, newTaskFormId, userNewTaskId);
 };
 
 window.controller.obtainNewTask = () => {
